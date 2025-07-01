@@ -1,4 +1,3 @@
-// src/components/auth/OAuthCallback.tsx
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useMutation } from '@tanstack/react-query';
@@ -26,7 +25,6 @@ export default function OAuthCallback() {
     });
 
     useEffect(() => {
-        // Trigger the refresh token call to get user data
         refreshMutation.mutate();
     }, []);
 
